@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bazar@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.8">
+    <root id="1">
+      <ServerVersion>11.0</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="bazar">
+      <ObjectId>16763</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+    </database>
+    <role id="4" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="13" parent="1" name="rossifumi46">
+      <ObjectId>16393</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Config>client_encoding=utf8
+default_transaction_isolation=read committed
+TimeZone=UTC+6</Config>
+    </role>
+    <schema id="14" parent="2" name="information_schema">
+      <ObjectId>12716</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+    </schema>
+    <schema id="16" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+    </schema>
+    <schema id="18" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <sequence id="20" parent="19" name="auth_group_id_seq">
+      <ObjectId>16793</ObjectId>
+      <StateNumber>655</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="21" parent="19" name="auth_group_permissions_id_seq">
+      <ObjectId>16803</ObjectId>
+      <StateNumber>655</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="22" parent="19" name="auth_permission_id_seq">
+      <ObjectId>16785</ObjectId>
+      <StateNumber>655</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="23" parent="19" name="core_category_id_seq">
+      <ObjectId>16860</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="24" parent="19" name="core_feedback_id_seq">
+      <ObjectId>16874</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="25" parent="19" name="core_profile_groups_id_seq">
+      <ObjectId>16844</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="26" parent="19" name="core_profile_id_seq">
+      <ObjectId>16834</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="27" parent="19" name="core_profile_user_permissions_id_seq">
+      <ObjectId>16852</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="28" parent="19" name="core_request_id_seq">
+      <ObjectId>16885</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="29" parent="19" name="core_request_tags_id_seq">
+      <ObjectId>16941</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="30" parent="19" name="core_seller_category_id_seq">
+      <ObjectId>16905</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="31" parent="19" name="core_seller_id_seq">
+      <ObjectId>16893</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="32" parent="19" name="core_seller_tag_id_seq">
+      <ObjectId>16933</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="33" parent="19" name="core_tag_id_seq">
+      <ObjectId>16913</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="34" parent="19" name="core_user_id_seq">
+      <ObjectId>16921</ObjectId>
+      <StateNumber>666</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="35" parent="19" name="django_admin_log_id_seq">
+      <ObjectId>17067</ObjectId>
+      <StateNumber>668</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="36" parent="19" name="django_content_type_id_seq">
+      <ObjectId>16775</ObjectId>
+      <StateNumber>651</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="37" parent="19" name="django_migrations_id_seq">
+      <ObjectId>16764</ObjectId>
+      <StateNumber>650</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="38" parent="19" name="auth_group">
+      <ObjectId>16795</ObjectId>
+      <StateNumber>655</StateNumber>
+    </table>
+    <table id="39" parent="19" name="auth_group_permissions">
+      <ObjectId>16805</ObjectId>
+      <StateNumber>655</StateNumber>
+    </table>
+    <table id="40" parent="19" name="auth_permission">
+      <ObjectId>16787</ObjectId>
+      <StateNumber>655</StateNumber>
+    </table>
+    <table id="41" parent="19" name="authtoken_token">
+      <ObjectId>17091</ObjectId>
+      <StateNumber>671</StateNumber>
+    </table>
+    <table id="42" parent="19" name="core_category">
+      <ObjectId>16862</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="43" parent="19" name="core_feedback">
+      <ObjectId>16876</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="44" parent="19" name="core_profile">
+      <ObjectId>16836</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="45" parent="19" name="core_profile_groups">
+      <ObjectId>16846</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="46" parent="19" name="core_profile_user_permissions">
+      <ObjectId>16854</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="47" parent="19" name="core_request">
+      <ObjectId>16887</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="48" parent="19" name="core_request_tags">
+      <ObjectId>16943</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="49" parent="19" name="core_seller">
+      <ObjectId>16895</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="50" parent="19" name="core_seller_category">
+      <ObjectId>16907</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="51" parent="19" name="core_seller_tag">
+      <ObjectId>16935</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="52" parent="19" name="core_tag">
+      <ObjectId>16915</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="53" parent="19" name="core_user">
+      <ObjectId>16923</ObjectId>
+      <StateNumber>666</StateNumber>
+    </table>
+    <table id="54" parent="19" name="django_admin_log">
+      <ObjectId>17069</ObjectId>
+      <StateNumber>668</StateNumber>
+    </table>
+    <table id="55" parent="19" name="django_content_type">
+      <ObjectId>16777</ObjectId>
+      <StateNumber>655</StateNumber>
+    </table>
+    <table id="56" parent="19" name="django_migrations">
+      <ObjectId>16766</ObjectId>
+      <StateNumber>650</StateNumber>
+    </table>
+    <table id="57" parent="19" name="django_session">
+      <ObjectId>17125</ObjectId>
+      <StateNumber>677</StateNumber>
+    </table>
+    <table id="58" parent="19" name="drfpasswordless_callbacktoken">
+      <ObjectId>17109</ObjectId>
+      <StateNumber>675</StateNumber>
+    </table>
+  </database-model>
+</dataSource>
