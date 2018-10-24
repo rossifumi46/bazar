@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce1b1438-f95e-400b-9248-aa70d3ec6086" name="Default" comment="" />
+    <list default="true" id="ce1b1438-f95e-400b-9248-aa70d3ec6086" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +300,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32972136" />
@@ -306,9 +307,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" x="0" y="53" width="1366" height="715" id="Python Console" order="7" type="WINDOWED" visible="true" weight="0.25324675" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" x="1" y="52" width="1364" height="715" id="Terminal" order="7" type="WINDOWED" visible="true" weight="0.4042208" />
+      <window_info active="true" anchor="bottom" x="1" y="52" width="1364" height="715" id="Terminal" order="7" type="WINDOWED" visible="true" weight="0.4042208" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32817337" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8799076" visible="true" weight="0.20574887" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8799076" visible="true" weight="0.20574887" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20877458" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32972136" />
