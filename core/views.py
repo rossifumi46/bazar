@@ -102,11 +102,11 @@ def seller_detail(request, pk):
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
-        serializer = RequestSerializer(seller)
+        serializer = SellerSerializer(seller)
         return Response(serializer.data)
 
     elif request.method == 'PUT':
-        serializer = SellerSerializer(seller, data=request.data)
+        serializer = SellerSerializer(seller, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
